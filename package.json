@@ -1,6 +1,6 @@
 {
 	"name": "generator-html-boilerplate",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A simple boilerplate to start building a site.",
 	"keywords": ["yeoman-generator, html, html5, boilerplate, template"],
 	"dependencies": {
