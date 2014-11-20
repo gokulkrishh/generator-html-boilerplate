@@ -1,0 +1,21 @@
+{
+	"name": "generator-html-boilerplate",
+	"version": "0.1.1",
+	"description": "A simple boilerplate to start building a site.",
+	"keywords": ["yeoman-generator, html, html5, boilerplate, template"],
+	"dependencies": {
+		"yeoman-generator": "^0.18.0",
+		"yosay":"^1.0.0",
+		"chalk":"*"
+	},
+	"author":{
+		"name":"gokulkrishh",
+		"email":"krishnangokul9@gmail.com",
+		"url":"https://github.com/gokulkrishh"
+	},
+	"engines":{
+		"node":">=0.10.0",
+		"npm":">=1.2.10"
+	},
+	"license":"MIT"
+}
