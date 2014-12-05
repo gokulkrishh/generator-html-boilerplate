@@ -9,7 +9,6 @@ If you dont have node, then go to http://nodejs.org/
 
 ```bash
 $ npm install -g yo
-$ npm install -g bower
 $ npm install -g gulp
 ```
 
@@ -48,6 +47,11 @@ $ gulp
 ```bash
 $ gulp help
 ```
+
+If you don't know what is gulp and how it works
+
+go here: [Automation using grunt and gulp](http://gokulkrishh.github.io/2014/10/27/Task-Automation-using-grunt-and-gulp/)
+
 
 ## License
 
