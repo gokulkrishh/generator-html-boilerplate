@@ -1,7 +1,11 @@
 {
 	"name": "generator-html-boilerplate",
 	"version": "0.1.3",
+<<<<<<< HEAD
 	"description": "A simple boilerplate to start building a site with help of gulp.",
+=======
+	"description": "A simple boilerplate to start building a site.",
+>>>>>>> d4266a4ce9a9dae6642167676bde1949ffaa339d
 	"keywords": ["yeoman-generator, html, html5, boilerplate, template"],
 	"dependencies": {
 		"yeoman-generator": "^0.18.0",
@@ -12,7 +16,11 @@
 		"name":"gokulkrishh",
 		"email":"krishnangokul9@gmail.com",
 		"url":"https://github.com/gokulkrishh",
+<<<<<<< HEAD
 		"blog" : "http://gokulkrishh.github.io/"
+=======
+		"website": "https://gokulkrishh.github.io"
+>>>>>>> d4266a4ce9a9dae6642167676bde1949ffaa339d
 	},
 	"main": "app/index.js",
 	"repository": "gokulkrishh/generator-html-boilerplate",

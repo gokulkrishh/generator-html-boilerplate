@@ -69,7 +69,7 @@ var generator = yeoman.generators.Base.extend({
 
 		//copy gulp & pkg.json file
 		this.copy('_package.json', 'package.json');
-		this.copy('_gulpfile.js', 'gulpFile.js');
+		this.copy('_gulpFile.js', 'gulpFile.js');
 	}
 });
 

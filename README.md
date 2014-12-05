@@ -1,9 +1,9 @@
 html-boilerplate
 =================
 
-A simple boilerplate to start building a site.
+A simple html generator to create a site with help of gulp.js
 
-## Get Started, Install Dependency Packages:
+## Get Started, Install Dependency Packages through terminal:
 
 If you dont have node, then go to http://nodejs.org/
 
@@ -12,7 +12,7 @@ $ npm install -g yo
 $ npm install -g gulp
 ```
 
-## Install Grep:
+## Install generator now:
 
 ```bash
 $ npm install -g generator-html-boilerplate
@@ -30,11 +30,20 @@ Create new application with:
 $ yo html-boilerplate <app-name> (or) yo html-boilerplate
 ```
 
-Everything is set, npm & bower will automatically install, if not:
+Everything is set, npm will automatically install, if not:
 
 ```bash
 $ npm install
 ```
+
+Save the pain of copy pasting libraries
+
+Gulp will take care of including it in the build without stopping the local server. Just type below command.
+
+```bash
+$ bower install --save <library-name>
+```
+
 
 ## Finally, type:
 
@@ -51,6 +60,9 @@ $ gulp help
 If you don't know what is gulp and how it works
 
 go here: [Automation using grunt and gulp](http://gokulkrishh.github.io/2014/10/27/Task-Automation-using-grunt-and-gulp/)
+
+
+## If you think generator can be improved even more, create an issue and give me a pull request
 
 
 ## License

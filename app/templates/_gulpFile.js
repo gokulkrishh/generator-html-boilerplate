@@ -204,8 +204,8 @@ gulp.task('watch', function () {
 		CSS     = gulp.watch(['app/*.css', 'app/css/**/*.css'], ['css']),
 		SASS    = gulp.watch(['app/*.scss', 'app/css/**/*.scss'], ['css']),
 		FONTS   = gulp.watch(['app/fonts/*.*', 'app/fonts/**/*.*'], ['fonts']),
-		IMG     = gulp.watch(['app/images/*.*', 'app/images/**/*.*'], ['img-min']);
-		// BOWER   = gulp.watch(['bower_components/**/*.*', 'bower.json'], ['concat-bower']);
+		IMG     = gulp.watch(['app/images/*.*', 'app/images/**/*.*'], ['img-min']),
+		BOWER   = gulp.watch(['bower_components/**/*.*', 'bower_components/**/**', 'bower.json'], ['concat-bower']);
 
 	var log = function (event) {
 		if (event.type == 'deleted') {
@@ -224,7 +224,7 @@ gulp.task('watch', function () {
 	JS.once('change', log);
 	IMG.once('change', log);
 	FONTS.once('change', log);
-	// BOWER.once('change', log);
+	BOWER.once('change', log);
 });
 
 /**================================================
@@ -271,14 +271,14 @@ gulp.task('zip', function () {
 gulp.task('build', function () {
 
 	console.log(hint('\n --------- Build Development Mode  -------------------------------------->>> \n'));
-	runSequence('html', 'scripts', 'css', 'img-min', 'server', 'watch');
+	runSequence('html', 'scripts', 'css', 'img-min', 'concat-bower', 'server', 'watch');
 });
 
 gulp.task('prod', function () {
 
 	console.log(hint('\n --------- Build Production Mode  --------------------------------------->>> \n'));
 	production = true;
-	runSequence('html', 'scripts', 'css', 'img-min', 'server', 'watch');
+	runSequence('html', 'scripts', 'css', 'img-min', 'concat-bower', 'server', 'watch');
 });
 
 
