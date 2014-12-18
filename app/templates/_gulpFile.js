@@ -91,7 +91,7 @@ gulp.task('html', function () {
 	console.log(hint('\n --------- Running HTML tasks ------------------------------------------>>>'));
 	return gulp.src([src.root + '/*.html', src.root + '/**/*.html'])
 		.pipe(gulpif(production, plugins.minifyHtml(opts)))
-		pipe(gulpPlugins.fileInclude({
+		.pipe(plugins.fileInclude({
 			prefix: '@@',
 			basepath: './app/templates/' //path to templates
 		}))
