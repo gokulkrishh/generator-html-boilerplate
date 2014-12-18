@@ -1,6 +1,6 @@
 {
 	"name": "generator-html-boilerplate",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "A simple boilerplate to start building a site with help of gulp.",
 	"keywords": ["yeoman-generator, html, html5, boilerplate, template"],
 	"dependencies": {
