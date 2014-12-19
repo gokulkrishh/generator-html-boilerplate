@@ -52,13 +52,17 @@ var generator = yeoman.generators.Base.extend({
 		this.mkdir('app/js/vendor');
 		this.mkdir('app/fonts');
 		this.mkdir('app/images');
+		this.mkdir('app/templates');
 		this.mkdir('bower_components');
 
 		//copy files
 		this.copy('_index.html', 'app/index.html');
-		this.copy('_main.js', 'app/js/main.js');
+		this.copy('_header.html', 'app/templates/header.html');
+		this.copy('_footer.html', 'app/templates/footer.html');
 		this.copy('_styles.css', 'app/css/styles.css');
 		this.copy('_app.scss', 'app/css/app.scss');
+		this.copy('_layout.scss', 'app/css/layout.scss');
+		this.copy('_main.js', 'app/js/main.js');
 	},
 	configFiles : function () {
 		//copy config files

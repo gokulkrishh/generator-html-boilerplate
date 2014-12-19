@@ -158,7 +158,7 @@ gulp.task('scripts', function () {
 gulp.task('concat-bower', function () {
 
 	console.log(hint('\n --------- Bower Concat ------------------------------------------------->>> \n'));
-	var jsFilter   = plugins.filter('**/*.js'),
+	var jsFilter = plugins.filter('**/*.js'),
 		cssFilter  = plugins.filter('**/*.css');
 
 	//for js files

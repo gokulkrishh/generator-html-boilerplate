@@ -1,7 +1,7 @@
 html-boilerplate
 =================
 
-A simple html generator to create a site with help of gulp.js
+A simple HTML5 Boiletplate generator to create a site with help of gulp.js. If you don't know what is gulp.js and how it works go here: [Automation using grunt and gulp](http://gokulkrishh.github.io/2014/10/27/Task-Automation-using-grunt-and-gulp/)
 
 ## Get Started, Install Dependency Packages through terminal:
 
@@ -24,7 +24,7 @@ First create a folder and cd into:
 $ mkdir <folder-name> && cd $_
 ```
 
-Create new application with:
+Create a new application with:
 
 ```bash
 $ yo html-boilerplate <app-name> (or) yo html-boilerplate
@@ -36,14 +36,13 @@ Everything is set, npm will automatically install, if not:
 $ npm install
 ```
 
-Save the pain of copy pasting libraries
+Save the pain of copy pasting library files like jQuery, Bootstrap etc
 
-Gulp will take care of including it in the build without stopping the local server. Just type below command.
+Gulp will take care of including it in the build without stopping the local server. Just type below command in terminal.
 
 ```bash
 $ bower install --save <library-name>
 ```
-
 
 ## Finally, type:
 
@@ -57,12 +56,15 @@ $ gulp
 $ gulp help
 ```
 
-If you don't know what is gulp and how it works
+## If your code is ready to production, use below command
 
-go here: [Automation using grunt and gulp](http://gokulkrishh.github.io/2014/10/27/Task-Automation-using-grunt-and-gulp/)
+```bash
+$ gulp prod
+```
 
+The above command will uglify and minify HTML, CSS and JS files.
 
-## If you think generator can be improved even more, create an issue and give me a pull request
+## If you think this generator can be improved even more, create an issue and give me a pull request
 
 
 ## License
