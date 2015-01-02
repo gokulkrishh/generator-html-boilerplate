@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Generator-html-boilerplate : A HTML generator to create a site with help of gulp.js to automate build tasks">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Generator-html-boilerplate</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gokulkrishh/generator-html-boilerplate">View on GitHub</a>
+
+          <h1 id="project_title">Generator-html-boilerplate</h1>
+          <h2 id="project_tagline">A HTML generator to create a site with help of gulp.js to automate build tasks</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gokulkrishh/generator-html-boilerplate/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gokulkrishh/generator-html-boilerplate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>A HTML5 Boilerplate generator to create a site with help of gulp.js to automate building task. If you don't know what is gulp.js and how it works, read my blog post: <a href="http://gokulkrishh.github.io/2014/10/27/Task-Automation-using-grunt-and-gulp/">Automation using Grunt and Gulp</a>.</p>
+
+<h2>
+<a id="get-started-install-dependency-packages-through-terminal" class="anchor" href="#get-started-install-dependency-packages-through-terminal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Started, Install Dependency Packages through terminal:</h2>
+
+<p>If you dont have node, then go to <a href="http://nodejs.org/">http://nodejs.org/</a></p>
+
+<div class="highlight highlight-bash"><pre>$ npm install -g yo
+$ npm install -g gulp</pre></div>
+
+<h2>
+<a id="install-generator-now" class="anchor" href="#install-generator-now" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install generator now:</h2>
+
+<div class="highlight highlight-bash"><pre>$ npm install -g generator-html-boilerplate</pre></div>
+
+<p>First create a folder and cd into:</p>
+
+<div class="highlight highlight-bash"><pre>$ mkdir <span class="pl-k">&lt;</span>folder-name<span class="pl-k">&gt;</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-s3">cd</span> <span class="pl-vo">$_</span></pre></div>
+
+<p>Create a new application with:</p>
+
+<div class="highlight highlight-bash"><pre>$ yo html-boilerplate <span class="pl-k">&lt;</span>app-name<span class="pl-k">&gt;</span> (or) yo html-boilerplate</pre></div>
+
+<p>Everything is set, npm will automatically install, if not:</p>
+
+<div class="highlight highlight-bash"><pre>$ npm install</pre></div>
+
+<p>Save the pain of copy pasting library files like jQuery, Bootstrap etc</p>
+
+<p>Gulp will take care of including it in the build without stopping the local server. Just type below command in terminal.</p>
+
+<div class="highlight highlight-bash"><pre>$ bower install --save <span class="pl-k">&lt;</span>library-name<span class="pl-k">&gt;</span></pre></div>
+
+<h2>
+<a id="finally-type" class="anchor" href="#finally-type" aria-hidden="true"><span class="octicon octicon-link"></span></a>Finally, type:</h2>
+
+<div class="highlight highlight-bash"><pre>$ gulp</pre></div>
+
+<h2>
+<a id="get-list-of-tasks" class="anchor" href="#get-list-of-tasks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get list of tasks</h2>
+
+<div class="highlight highlight-bash"><pre>$ gulp <span class="pl-s3">help</span></pre></div>
+
+<h2>
+<a id="if-your-code-is-ready-to-production-to" class="anchor" href="#if-your-code-is-ready-to-production-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>If your code is ready to production to</h2>
+
+<p>Uglify and minify HTML, CSS and JS files, use below command.</p>
+
+<div class="highlight highlight-bash"><pre>$ gulp prod</pre></div>
+
+<h3>
+<a id="folder-structure" class="anchor" href="#folder-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Folder Structure:</h3>
+
+<h1></h1>
+
+<p>Copy all your existing files to app folder (or) create your own files in folder structure like below</p>
+
+<pre><code>  app/          (Development)
+   -js/         (JS files)
+   -js/lib/     (JS library files)
+   -css/        (Both SASS and CSS files &amp; import SCSS files to app.scss)
+   -css/lib/    (CSS Frameworks)
+   -images/     (images)
+   -fonts/      (fonts goes here)
+   -templates/  (template and layout files goes here)
+   -index.html
+</code></pre>
+
+<p>All the files in above structure will automatically copied to build/ directory as</p>
+
+<pre><code>  build/        (Production)
+   -js/         (all.js has all JS files + bower.js has all bower files)
+   -css/        (styles.css has SCSS converted CSS files &amp; CSS files + bower.css files)
+   -images/     (images files)
+   -fonts/      (fonts)
+   -templates/  (template HTML files)
+   -index.html
+</code></pre>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Author <a href="https://github.com/gokulkrishh" class="user-mention">@gokulkrishh</a>. If you think this generator can be improved, create an issue and give me a pull request.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with this generator?. Contact me <a href="mailto:krishnangokul9@gmail.com">krishnangokul9@gmail.com</a> and I will contact you as soon as possible.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Generator-html-boilerplate maintained by <a href="https://github.com/gokulkrishh">gokulkrishh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
